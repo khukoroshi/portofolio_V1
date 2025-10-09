@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- header start -->
+    <div id="header">
+        <header id="main-header">
+            <h1><a href="#home" class="active">Haikal Firansyah</a></h1>
+            <div class="hamburger-menu">
+                <input id="hMenu" type="checkbox" name="menu" />
+                <div></div>
+                <div></div>
+                <div></div>
+                <!-- <div></div> -->
+            </div>
+            <div class="btn-head">
+                <nav>
+                    <a href="#about">about</a>
+                    <a href="#experient">experience</a>
+                    <a href="#work">work</a>
+                </nav>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <button id="btnPopCon">contact</button>
+                    <div class="theme-togle">
+                        <input type="checkbox" name="" id="toggleTheme">
+                        <div class="toggle"></div>
+                    </div>
+                </div>  
+            </div>
+            
+        </header>
+    </div>
+<!-- header end -->
+
+<!-- bartoggle start -->
+    <div id="barToggle">
+        <ul>
+            <li><a href="">@</a></li>
+            <li><a href="">#</a></li>
+            <li><a href="">$</a></li>
+        </ul>
+    </div>
+<!-- bartoggle end -->
+
+<!-- popup start -->
+    <div id="pop-con" class="overlay-popup">
+        <section class="contact">
+            <span id="btnClosePopCon" class="btn-close">&times;</span>
+            <h2>Get in touch</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="423fcfa8-7f22-459b-a21d-2963091fc530">
+
+                <input type="text" name="name" placeholder="Your Name" class="con-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="con-input" required>
+                <textarea rows="6" name="message" placeholder="Your Message" class="con-input" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+<!-- popup end -->
+
+<!-- popup future fiture start -->
+    <div id="futurePopUp" class="overlay-popup">
+        <section class="example">
+            <h1>fitur ini belum beres</h1>
+            <img src="img/IMG_3004.GIF" alt="">
+        </section>
+    </div>
+<!-- popup future fiture end -->
+
+<!-- home start -->
+    <div id="home">
+        <div class="home">
+            <h1>HI, I'M HAIKAL</h1>
+            <p>WEB DEVELOPER [FrontEnd & BackEnd]</p>
+            <div class="panah">
+                <div class="kanan"></div>
+                <div class="kiri"></div>
+            </div>
+        </div>
+    </div>
+<!-- home end -->
+
+<!-- about start -->
+    <div id="about" class="container">
+        <section class="a-bout">
+            <h2 class="sub-bab-h2">About me</h2>
+            <div class="content">
+                <div class="t-about">
+                    <p>
+                        Hi! Nama saya Haikal Firansyah, seorang web developer pemula dengan minat di bidang frontend dan backend. Saya lulusan SMK Al-Ihsan Batujajar (2025), jurusan Rekayasa Perangkat Lunak.
+                    </p>
+                    <br>
+                    <p>
+                        Saya senang mempelajari teknologi baru dan berfokus pada pembuatan website yang sederhana, elegan, dan fungsional. Dengan kode yang bersih, efisien, dan skalabel, saya ingin menghadirkan pengalaman pengguna yang lancar.
+                    </p>
+                    <br>
+                    <p>
+                        Web development bagi saya adalah batu loncatan menuju cita-cita menjadi programmer handal di bidang keamanan, peretasan etis, dan pengembangan game. Saya percaya setiap proyek adalah kesempatan belajar, dan saya selalu terbuka untuk berkolaborasi serta berbagi pengetahuan.
+                    </p>
+                </div>
+                <div class="i-about">
+                    <div class="front"></div>
+                    <img id="gbr-about" src="img/gprof1.png" alt="haikal picture" width="100%">
+                    <div class="back"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- about end -->
+
+<!-- experient start -->
+    <div id="experient" class="container">
+        <section class="exper">
+            <h2 class="sub-bab-h2">Experience</h2>
+            <div class="content-exp">  
+                <nav class="sidebar">
+                    <ul>
+                        <li class="active" data-tab="c-jnt">J&T Cargo</li>
+                        <li data-tab="c-tes">tes</li>
+                        <li data-tab="c-tech">technology</li>
+                    </ul>
+                </nav>
+                <div class="con-nav">
+                    <div id="c-jnt" class="tab active">
+                        <h2>Web developer J&T Cargo NGP014B</h2>
+                        <span>january - april 2024</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto voluptatibus in doloribus facere odio nihil eaque eos adipisci ipsum commodi id quaerat quam exercitationem sequi nesciunt quasi minus laudantium!</p>
+                    </div>
+                    <div id="c-tes" class="tab">
+                        <h2>tes</h2>
+                        <span>january - april 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus, distinctio similique eum, quibusdam dolore obcaecati, natus beatae quaerat ipsa placeat ex quos. Possimus minus saepe sit pariatur corrupti dolorum sed inventore tenetur sint laboriosam nobis molestiae ad doloribus aspernatur obcaecati, beatae necessitatibus aperiam ducimus, provident sapiente a itaque harum dolores! Beatae, cupiditate ut. Eligendi, deserunt? Ab excepturi dolorem minima, similique aperiam tempore voluptatibus maxime, possimus quaerat nemo aut, odio magni ducimus hic fuga! Ut id praesentium doloribus alias dignissimos repellendus dolores recusandae adipisci, quia, repellat quibusdam sed cumque sapiente totam odit numquam quis ducimus unde quo voluptatibus molestias qui!</p>
+                    </div>
+                    <div id="c-tech" class="tab">
+                        <h2>teknologi yang ku pakai</h2>
+                        <span>2022 - sekarang</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto voluptatibus in doloribus facere odio nihil eaque eos adipisci ipsum commodi id quaerat quam exercitationem sequi nesciunt quasi minus laudantium!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="content-serti">
+            <div class="cour-2" style="gap: 1em;">
+                <div class="img-card"><img src="img/MDL-504.png" alt="Mdl-504"></div>
+                <div class="img-card"><img src="img/MDL -566.png" alt="MDL-566"></div>
+                <div class="img-card"><img src="img/MDL-567.png" alt="MDL-567"></div>
+                <div class="img-card"><img src="img/Screenshot_2025-09-19_21-27-09.png" alt="hacyiv8"></div>
+            </div>
+        </div>
+    </div>
+<!-- experient end -->
+
+<!-- work start -->
+    <div id="work" class="container">
+        <section class="work">
+            <h2 class="sub-bab-h2">Some Things I’ve Built</h2>
+            <div class="k-cont">
+                <div class="content">
+                    <div class="project-description">
+                        <h2>Web profile company</h2>
+                        <span>
+                            Ini adalah project website pertama ku di perusahaan J&T Cargo NGP014B, yaitu sebuah web profile company yang minimalis dan sudah responsive
+                        </span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <div class="front"></div>
+                        <img src="img/Annotation 2025-09-21 215025.png" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="project-description">
+                        <h2>Web To-Do List</h2>
+                        <span>
+                            Ini adalah sebuah website yang ku buat ketika ujian kompetensi di sekolah, sebuah To-Do List sederhana dengan sistem Login dan Register, dan waktu deadline.
+                        </span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <!-- <li>VS Code</li> -->
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <div class="front"></div>
+                        <img src="img/Screenshot_21-9-2025_21443_localhost.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="project-description">
+                        <h2>Web Galery</h2>
+                        <span>
+                            ini adalah sebuah website tugas sekolah membuat web galery sederhana dengan fitur CRUD, Login & Register  
+                        </span>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <div class="front"></div>
+                        <img src="img/Screenshot_23-9-2025_073_localhost.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- work end -->
+
+<!-- halaman tambahan start -->
+    <div id="personal" class="container">
+        <section>
+            <h2></h2>
+        </section>
+    </div>
+<!-- halaman tambahan end -->
+
+<!-- footer start -->
+    <div id="footer">
+        <footer>
+            <p>Created By Haikal Firansyah</p>
+        </footer>
+    </div>
+<!-- footer end -->
+    
+
+<!-- script js -->
+<script type="module" src="js/script.js"></script>
+</body>
+</html>

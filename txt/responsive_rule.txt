@@ -1,0 +1,7 @@
+responsive font size
+h1{font-size: clamp(1.8rem, 10vw, 5rem)}
+dimana{
+  1.8rem = min
+  10vw = preferred / calc(7vw + 1rem)
+  5rem = max
+} 

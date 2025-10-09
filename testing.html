@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testing</title>
+  <style>
+    body{
+      height: 300vh;
+    }
+    *{box-sizing: border-box;}
+    .content{
+      position: relative;
+      height: auto;
+      width: auto;
+    }
+    .carousel{
+      margin: 3em auto;
+      width: 95%;
+      display: flex;
+      overflow-x: auto;
+    }
+    .carousel::-webkit-scrollbar{
+      display: none;
+    }
+    .front{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+    }
+    .group{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      animation: spin 30s infinite linear;
+      padding-right: 1em;
+    }
+    .card{
+      flex: 0 0 13em;
+      height: auto;
+      background: cornflowerblue;
+      font-size: 3rem;
+      border-radius: .2em;
+      text-align: center;
+      align-content: center;
+    }
+    @keyframes spin {
+      form{translate: 0;}
+      to{translate: -100%;}
+    }
+
+    .img-card{
+      scroll-snap-align: start;
+      aspect-ratio: 5/3;
+      font-size: 2rem;
+      flex: 0 0 20em;
+      align-content: center;
+    }
+    .cour-2{
+      scroll-behavior: smooth;
+      anchor-name: --cour-2;
+      scroll-snap-type: x mandatory;
+      scroll-marker-group: after;
+      margin: 3em auto;
+      width: 95%;
+      display: flex;
+      overflow-x: auto;
+      transition: all .5s ease;
+    }
+
+    .cour-2::-webkit-scrollbar{
+      display: none;
+    }
+  
+    .cour-2::scroll-button(right), .cour-2::scroll-button(left){
+      content: '>';
+      border: none;
+      background-color: lime;
+      font-family: Consolas;
+      font-size: 3rem;
+      color: white;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: fixed;
+      position-anchor: --cour-2;
+      position-area: right center;
+      translate: -50%;
+    }
+
+    .cour-2::scroll-button(left){
+      content: '<';
+      position-area: left center;
+      translate: 50%;
+    }
+
+    .cour-2::scroll-button(right):disabled, .cour-2::scroll-button(left):disabled{
+      opacity: .5;
+      cursor: auto;
+    }
+
+    .cour-2::scroll-marker-group{
+      display: flex;
+      justify-content: center;
+      gap: .3em;
+    }
+
+    .img-card::scroll-marker{
+      content: '';
+      height: .7em;
+      width: .7em;
+      border-radius: 50%;
+      background-color: snow;
+    }
+
+    .img-card::scroll-marker:target-current{
+      background-color: navy;
+    }
+
+    @media(max-width: 500px){
+      .img-card{
+        flex: 0 0 100%;
+      }
+    }
+
+    img{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="front"></div>
+    <div class="carousel">
+      <div class="group">
+        <div class="card"><img src="img/MDL -566.png" alt=""></div>
+        <div class="card"><img src="img/MDL-504.png" alt=""></div>
+        <div class="card"><img src="img/MDL-567.png" alt=""></div>
+        <div class="card"><img src="img/Screenshot_2025-09-19_21-27-09.png" alt=""></div>
+      </div>
+      <div aria-hidden class="group">
+        <div class="card"><img src="img/MDL -566.png" alt="" width="100%"></div>
+        <div class="card"><img src="img/MDL-504.png" alt="" width="100%"></div>
+        <div class="card"><img src="img/MDL-567.png" alt="" width="100%"></div>
+        <div class="card"><img src="img/Screenshot_2025-09-19_21-27-09.png" alt="" width="100%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="cour-2" style="gap: 1em;">
+    <div class="img-card"><img src="img/MDL-504.png" alt="1"></div>
+    <div class="img-card"><img src="img/coridor_tangga_sekolah(malam).png" alt="2"></div>
+    <div class="img-card"><img src="img/MDL -566.png" alt="3"></div>
+    <div class="img-card"><img src="img/coridor_tangga_sekolah(pagi).png" alt="4"></div>
+    <div class="img-card"><img src="img/MDL-567.png" alt="5"></div>
+    <div class="img-card"><img src="img/IMG_3004.GIF" alt="6"></div>
+    <div class="img-card"><img src="img/libraryes.jpg" alt="7"></div>
+    <div class="img-card"><img src="img/125157423_p2.png" alt="8"></div>
+    <div class="img-card"><img src="img/MDL-504.png" alt="9"></div>
+    <div class="img-card"><img src="img/MDL-504.png" alt="10"></div>
+    <div class="img-card"><img src="img/MDL-504.png" alt="11"></div>
+    <div class="img-card"><img src="img/MDL-504.png" alt="12"></div>
+  </div>
+</body>
+</html>

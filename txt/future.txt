@@ -1,0 +1,7 @@
+1. update halaman work
+2. footer dan content
+3. panel bar
+4. update halaman about aprof 
+5. update halaman experient
+6. edit warna website
+7. respondsive website
