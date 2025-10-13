@@ -616,6 +616,7 @@ header h1{
 }
 
 .i-about img{
+    /* position: sticky; */
     border-radius: 8px;
     border: 1px solid var(--green);
     transition: all .5s;
@@ -716,6 +717,7 @@ header h1{
     top: 0;
     left: 0;
     right: 0;
+    /* background-color: red; */
     /* height: 500px; */
 }
 
@@ -726,12 +728,27 @@ header h1{
 .tab span{
     font-family: 'Asimovian', serif;
 }
-.tab p{
+.tab p, .tab .tech-con-img{
     margin-top: 1rem;
 }
 .tab p, .tab span{
     font-size: .85rem;
     color: var(--text-warna-sedang);
+}
+.tab .tech-con-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+.tab .tech-con-img img{
+    width: 13%;
+    transition: all .9s;
+    filter: grayscale(10);
+}
+.tab .tech-con-img img:hover{
+    filter: grayscale(0);
 }
 
 .tab.active{
@@ -1069,6 +1086,9 @@ img{
         width: 90%;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .sub-bab-h2::after{
+        display: none;
     }
     .a-bout .content{
         /* padding: 0 5px; */
