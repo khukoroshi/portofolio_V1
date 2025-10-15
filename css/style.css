@@ -545,11 +545,101 @@ header h1{
     font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
 }
 
-.home p{
+.home .animated-text{
     font-size: clamp(.5rem, calc(7vw + .2rem) ,1rem);
     font-family: 'Asimovian', serif;
     color: var(--text-warna-sedang);
 }
+
+.home .animated-text span{
+    position: relative;
+}
+
+.home .animated-text span::before{
+    content: 'FrontEnd';
+    animation: words2 8s infinite;
+}
+.home .animated-text span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var();
+    backdrop-filter: blur(10px);
+    border-left: 2px solid var(--text-warna-sedang);
+    right: -3px;
+    animation: cursor .8s infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--navy-shadow);
+    }
+}
+@keyframes words {
+    0%,50%{
+        content: "FrontEnd";
+    }
+    51%,100%{
+        content: "BackEnd";
+    }
+}
+@keyframes typing {
+    25%,37%,75%,88%{
+        width: 0;
+    }
+    12%,50%,63%,100%{
+        width: calc(100%+8px);
+    }
+}
+@keyframes words2 {
+    0%,3%{
+        content: "F";
+    }
+    4%,6%{
+        content: "Fr";
+    }
+    7%,9%{
+        content: "Fro";
+    }
+    10%,13%{
+        content: "Fron";
+    }
+    14%,17%{
+        content: "Front";
+    }
+    18%,21%{
+        content: "FrontE";
+    }
+    22%,25%{
+        content: "FrontEn";
+    }
+    26%,50%{
+        content: "FrontEnd";
+    }
+    51%,54%{
+        content: "B";
+    }
+    55%,58%{
+        content: "Ba";
+    }
+    59%,62%{
+        content: "Bac";
+    }
+    63%,66%{
+        content: "Back";
+    }
+    67%,70%{
+        content: "BackE";
+    }
+    71%,75%{
+        content: "BackEn";
+    }
+    76%,100%{
+        content: "BackEnd";
+    }
+}
+
 
 .panah{
     position: absolute;
@@ -807,26 +897,28 @@ header h1{
 }
 
 .cour-2::scroll-button(right), .cour-2::scroll-button(left){
-    content: '>';
+    content: '';
     border: none;
-    background-color: lime;
+    background: linear-gradient(45deg,var(--green));
     font-family: Consolas;
     font-size: 3rem;
-    color: white;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    color: black;
+    height: 4rem;
+    width: 4rem;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+    /* border-radius: 15px; */
+    filter: blur(2px);
     cursor: pointer;
     position: fixed;
     position-anchor: --cour-2;
-    position-area: right center;
-    translate: -50%;
+    position-area: right bottom;
+    translate: -100%;
 }
 
 .cour-2::scroll-button(left){
-    content: '<';
-    position-area: left center;
-    translate: 50%;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+    position-area: left bottom;
+    translate: 100%;
 }
 
 .cour-2::scroll-button(right):disabled, .cour-2::scroll-button(left):disabled{
@@ -838,6 +930,10 @@ header h1{
     display: flex;
     justify-content: center;
     gap: .3em;
+    position: fixed;
+    position-anchor: --cour-2;
+    position-area: center bottom;
+    transform: translateY(50%);
 }
 
 .img-card::scroll-marker{
@@ -845,11 +941,12 @@ header h1{
     height: .7em;
     width: .7em;
     border-radius: 50%;
-    background-color: snow;
+    border: 1px solid var(--green);
+    background-color: var(--navy-shadow);
 }
 
 .img-card::scroll-marker:target-current{
-    background-color: navy;
+    background-color: var(--green);
 }
 
 
@@ -979,6 +1076,43 @@ header h1{
 }
 /* work end */
 
+/** =====================
+ * Resume start
+ ====================== */
+.resume{
+    padding: 5rem 1rem 5rem;
+    height: auto;
+    display: flex;
+    color: var(--text-warna-besar);
+    flex-direction: column;
+    background-color: var(--navy-shadow);
+    backdrop-filter: blur(10px);
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all .8s ease;  
+}
+.resume h2{
+    font-family: "Kode_Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.resume button{
+    font-family: 'Asimovian', serif;
+    background-color: transparent;
+    border: 2px solid var(--text-warna-besar);
+    color: var(--text-warna-kecil);
+    font-size: 1rem;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+.resume button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+/* resume end */
+
 
 /** =====================
  * Foooter start
@@ -1067,6 +1201,10 @@ img{
   .exper{
     width: 85%;
   }
+  .cour-2::scroll-button(right), .cour-2::scroll-button(left){
+    width: 3rem;
+    height: 3rem;
+  }
 
   /* untuk work */
   .work .k-cont .content .project-description, .work .k-cont .content .project-image{
@@ -1130,7 +1268,10 @@ img{
     }
     .content-exp .con-nav{
         width: 90%;
-
+    }
+    .cour-2::scroll-button(right), .cour-2::scroll-button(left){
+        width: 2rem;
+        height: 2rem;
     }
 
     /* untuk work */
