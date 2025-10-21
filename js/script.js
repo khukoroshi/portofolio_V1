@@ -17,14 +17,40 @@ const custom = cubicBezier(0.68, -0.55, 0.27, 1.55);
  * Header (efek scroll + nav aktif + smooth scroll + popup)
  ====================== */
 const mainHeader = document.getElementById("main-header");
-
+const stickyBoxRight = document.getElementById('sticky-content-right');
+const stickyBoxLeft = document.getElementById('sticky-content-left');
   // efek scroll
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 150) {
+  const scrollPos = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const totalHeight = document.body.scrollHeight - windowHeight;
+
+  if (scrollPos > 150) {
     mainHeader.classList.add("scrolled");
   } else {
     mainHeader.classList.remove("scrolled");
   }
+  // Jika sudah scroll lebih dari 100vh, munculkan
+  if (scrollPos > windowHeight) {
+    stickyBoxRight.classList.add('show');
+    stickyBoxLeft.classList.add('show');
+  } else {
+    stickyBoxRight.classList.remove('show');
+    stickyBoxLeft.classList.remove('show');
+  }
+
+  // Jika sudah di paling bawah, bisa tambahkan efek lain misalnya
+  // if (scrollPos >= totalHeight - 50) {
+  //   stickyBoxRight.style.background = '#f00';
+  //   // stickyBoxRight.textContent = 'Kamu sudah sampai bawah!';
+  //   stickyBoxLeft.style.background = '#f00';
+  //   // stickyBoxLeft.textContent = 'Kamu sudah sampai bawah!';
+  // } else {
+  //   stickyBoxRight.style.background = '#0f0';
+  //   // stickyBoxRight.textContent = 'Aku muncul setelah kamu scroll jauh!';
+  //   stickyBoxLeft.style.background = '#0f0';
+  //   // stickyBoxLeft.textContent = 'Aku muncul setelah kamu scroll jauh!';
+  // }
 });
 
 // nav + smooth scroll

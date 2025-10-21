@@ -330,7 +330,7 @@ header h1{
 /* header end */
 
 /** =====================
- * bartoggle start
+ * bartoggle start / sticky content
  ====================== */
 #barToggle{
     position: fixed;
@@ -353,6 +353,71 @@ header h1{
 #barToggle ul li a{
     color: white;
     text-decoration: none;
+}
+
+
+ /* Elemen yang akan muncul */
+#sticky-content-right, #sticky-content-left {
+    position: fixed;
+    z-index: 999;
+    color: hsl(0, 0%, 0%);
+    /* padding: 15px 25px; */
+    /* border-radius: 10px; */
+    /* font-weight: bold; */
+    opacity: 0;
+    /* pointer-events: none; */
+    transition: all 0.4s ease;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+}
+.s-c-r{
+    right: 40px;
+}
+.s-c-l{
+    left: 40px;
+}
+.s-c-r a {
+    font-family: "Kode_Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var(--text-warna-kecil); 
+    font-size: .75rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 4px;
+    transition: all .3s ease;
+}
+
+.s-c-r a:hover, .s-c-l a:hover svg{
+    color: var(--green);  
+    transform: translateY(-3px);
+    fill: var(--green);
+}
+.s-c-l a{
+    width: 20px;
+    height: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.s-c-r .line, .s-c-l .line {
+    width: 1px;
+    height: 90px;
+    background-color: var(--text-warna-kecil);
+    margin-top: 20px; 
+}
+
+/* Ketika aktif */
+#sticky-content-right.show, #sticky-content-left.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 /* bartoggle end */
 
@@ -861,7 +926,7 @@ header h1{
 .content-serti{
     position: relative;
     height: auto;
-    width: 99%;
+    width: 80%;
 }
 .content-serti .cour-2{
     margin: 100px auto;
@@ -1099,7 +1164,7 @@ header h1{
     font-weight: 600;
     line-height: 3rem;
 }
-.resume button{
+.resume .button-resume{
     font-family: 'Asimovian', serif;
     background-color: transparent;
     border: 2px solid var(--text-warna-besar);
@@ -1107,8 +1172,10 @@ header h1{
     font-size: 1rem;
     padding: 1em 1.5em;
     cursor: pointer;
+    text-decoration: none;
+    transition: all .5s ease;
 }
-.resume button:hover{
+.resume .button-resume:hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
 /* resume end */
@@ -1268,6 +1335,9 @@ img{
     }
     .content-exp .con-nav{
         width: 90%;
+    }
+    .content-serti{
+        width: 99%;
     }
     .cour-2::scroll-button(right), .cour-2::scroll-button(left){
         width: 2rem;
