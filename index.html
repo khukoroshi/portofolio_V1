@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<!-- header start -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header start -->
     <div id="header">
-        <header id="main-header">
-            <h1><a href="#home" class="active">Haikal Firansyah</a></h1>
-            <div class="hamburger-menu">
-                <input id="hMenu" type="checkbox" name="menu" />
-                <div></div>
-                <div></div>
-                <div></div>
-                <!-- <div></div> -->
+      <header id="main-header">
+        <h1><a href="#home" class="active">Haikal Firansyah</a></h1>
+        <div class="hamburger-menu">
+          <input id="hMenu" type="checkbox" name="menu" />
+          <div></div>
+          <div></div>
+          <div></div>
+          <!-- <div></div> -->
+        </div>
+        <div class="btn-head">
+          <nav>
+            <a href="#about">about</a>
+            <a href="#experient">experience</a>
+            <a href="#work">work</a>
+          </nav>
+          <div style="display: flex; gap: 10px; align-items: center">
+            <button id="btnPopCon">contact</button>
+            <div class="theme-togle">
+              <input type="checkbox" name="" id="toggleTheme" />
+              <div class="toggle"></div>
             </div>
-            <div class="btn-head">
-                <nav>
-                    <a href="#about">about</a>
-                    <a href="#experient">experience</a>
-                    <a href="#work">work</a>
-                </nav>
-                <div style="display: flex; gap: 10px; align-items: center;">
-                    <button id="btnPopCon">contact</button>
-                    <div class="theme-togle">
-                        <input type="checkbox" name="" id="toggleTheme">
-                        <div class="toggle"></div>
-                    </div>
-                </div>  
-            </div>
-            
-        </header>
+          </div>
+        </div>
+      </header>
     </div>
-<!-- header end -->
+    <!-- header end -->
 
-<!-- bartoggle start -->
+    <!-- bartoggle start -->
     <div id="sticky-content-right" class="s-c-r">
-        <a href="mailto:haikalfiransyah03@gmail.com">haikalfiransyah03@gmail.com</a>
-        <div class="line"></div>
+      <a href="mailto:haikalfiransyah03@gmail.com"
+        >haikalfiransyah03@gmail.com</a
+      >
+      <div class="line"></div>
     </div>
     <div id="sticky-content-left" class="s-c-l">
-        <ul>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href=""> </a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-        </ul>
-        <div class="line"></div>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/khukoroshi"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 496"
+              fill="currentColor"
+              id="Github--Streamline-Font-Awesome"
+            >
+              <desc>Github Streamline Icon: https://streamlinehq.com</desc>
+              <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M167.542 392.6444c0 1.96 -2.254 3.528 -5.096 3.528 -3.234 0.294 -5.488 -1.274 -5.488 -3.528 0 -1.96 2.254 -3.528 5.096 -3.528 2.94 -0.294 5.488 1.274 5.488 3.528Zm-30.478 -4.41c-0.686 1.96 1.274 4.214 4.214 4.802 2.548 0.98 5.488 0 6.076 -1.96s-1.274 -4.214 -4.214 -5.096c-2.548 -0.686 -5.39 0.294 -6.076 2.254Zm43.316 -1.666c-2.842 0.686 -4.802 2.548 -4.508 4.802 0.294 1.96 2.842 3.234 5.782 2.548 2.842 -0.686 4.802 -2.548 4.508 -4.508 -0.294 -1.862 -2.94 -3.136 -5.782 -2.842Zm64.484 -375.536c-135.926 0 -239.904 103.194 -239.904 239.12 0 108.682 68.404 201.684 166.11 234.416 12.544 2.254 16.954 -5.488 16.954 -11.858 0 -6.076 -0.294 -39.592 -0.294 -60.172 0 0 -68.6 14.7 -83.006 -29.204 0 0 -11.172 -28.518 -27.244 -35.868 0 0 -22.442 -15.386 1.568 -15.092 0 0 24.402 1.96 37.828 25.284 21.462 37.828 57.428 26.95 71.442 20.482 2.254 -15.68 8.624 -26.558 15.68 -33.026 -54.782 -6.076 -110.054 -14.014 -110.054 -108.29 0 -26.95 7.448 -40.474 23.128 -57.722 -2.548 -6.37 -10.878 -32.634 2.548 -66.542 20.482 -6.37 67.62 26.46 67.62 26.46 19.6 -5.488 40.67 -8.33 61.544 -8.33s41.944 2.842 61.544 8.33c0 0 47.138 -32.928 67.62 -26.46 13.426 34.006 5.096 60.172 2.548 66.542 15.68 17.346 25.284 30.87 25.284 57.722 0 94.57 -57.722 102.116 -112.504 108.29 9.016 7.742 16.66 22.442 16.66 45.472 0 33.026 -0.294 73.892 -0.294 81.928 0 6.37 4.508 14.112 16.954 11.858 98 -32.536 164.444 -125.538 164.444 -234.22 0 -135.926 -110.25 -239.12 -246.176 -239.12Zm-144.648 338.002c-1.274 0.98 -0.98 3.234 0.686 5.096 1.568 1.568 3.822 2.254 5.096 0.98 1.274 -0.98 0.98 -3.234 -0.686 -5.096 -1.568 -1.568 -3.822 -2.254 -5.096 -0.98Zm-10.584 -7.938c-0.686 1.274 0.294 2.842 2.254 3.822 1.568 0.98 3.528 0.686 4.214 -0.686 0.686 -1.274 -0.294 -2.842 -2.254 -3.822 -1.96 -0.588 -3.528 -0.294 -4.214 0.686Zm31.752 34.888c-1.568 1.274 -0.98 4.214 1.274 6.076 2.254 2.254 5.096 2.548 6.37 0.98 1.274 -1.274 0.686 -4.214 -1.274 -6.076 -2.156 -2.254 -5.096 -2.548 -6.37 -0.98Zm-11.172 -14.406c-1.568 0.98 -1.568 3.528 0 5.782s4.214 3.234 5.488 2.254c1.568 -1.274 1.568 -3.822 0 -6.076 -1.372 -2.254 -3.92 -3.234 -5.488 -1.96Z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/hkl_firansyah/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 448"
+              fill="currentColor"
+              id="Instagram--Streamline-Font-Awesome"
+            >
+              <desc>Instagram Streamline Icon: https://streamlinehq.com</desc>
+              <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M224.049 111.4608c-62.2933 0 -112.5392 50.246 -112.5392 112.5392s50.2459 112.5392 112.5392 112.5392S336.5882 286.2932 336.5882 224s-50.246 -112.5392 -112.5392 -112.5392Zm0 185.7044c-40.2556 0 -73.1652 -32.8117 -73.1652 -73.1652s32.8117 -73.1652 73.1652 -73.1652S297.2141 183.6465 297.2141 224s-32.9096 73.1652 -73.1651 73.1652Zm143.3919 -190.3078c0 14.5938 -11.7534 26.2493 -26.2493 26.2493 -14.5939 0 -26.2494 -11.7534 -26.2494 -26.2493s11.7535 -26.2494 26.2494 -26.2494 26.2493 11.7535 26.2493 26.2494Zm74.5365 26.6411c-1.6651 -35.1624 -9.6966 -66.309 -35.4563 -91.9707 -25.6616 -25.6617 -56.8083 -33.6932 -91.9706 -35.4562 -36.2398 -2.0568 -144.8612 -2.0568 -181.101 0 -35.0644 1.6651 -66.211 9.6966 -91.9707 35.3583S7.7856 98.2382 6.0226 133.4006c-2.0568 36.2397 -2.0568 144.8611 0 181.1009 1.6651 35.1624 9.6966 66.309 35.4562 91.9707s56.8083 33.6932 91.9707 35.4562c36.2398 2.0568 144.8612 2.0568 181.101 0 35.1623 -1.6651 66.309 -9.6966 91.9706 -35.4562 25.6617 -25.6617 33.6932 -56.8083 35.4563 -91.9707 2.0568 -36.2398 2.0568 -144.7632 0 -181.003Zm-46.8179 219.8873c-7.6398 19.1973 -22.4295 33.987 -41.7247 41.7247 -28.8939 11.4596 -97.4557 8.8151 -129.3858 8.8151s-100.5899 2.5466 -129.3858 -8.8151c-19.1973 -7.6397 -33.9871 -22.4295 -41.7248 -41.7247 -11.4596 -28.8939 -8.815 -97.4556 -8.815 -129.3858s-2.5466 -100.5899 8.815 -129.3858c7.6398 -19.1973 22.4295 -33.987 41.7248 -41.7247 28.8938 -11.4596 97.4556 -8.8151 129.3858 -8.8151s100.5898 -2.5466 129.3858 8.8151c19.1973 7.6397 33.987 22.4295 41.7247 41.7247 11.4596 28.8939 8.8151 97.4556 8.8151 129.3858s2.6445 100.5899 -8.8151 129.3858Z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/haikal-firansyah-080975320/"
+            aria-label="Linkedin"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 448"
+              fill="currentColor"
+              id="Linkedin-In--Streamline-Font-Awesome"
+            >
+              <desc>Linkedin In Streamline Icon: https://streamlinehq.com</desc>
+              <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M102.7544 443.5151H11.732v-293.118h91.0224Zm-45.5602 -333.102c-29.106 0 -52.7142 -24.108 -52.7142 -53.214 0 -40.5794 43.9285 -65.9415 79.0713 -45.6518 16.3098 9.4164 26.3571 26.8188 26.3571 45.6518 0 29.106 -23.618 53.214 -52.7142 53.214Zm386.2278 333.102h-90.8264v-142.688c0 -34.006 -0.686 -77.616 -47.3242 -77.616 -47.3242 0 -54.5762 36.946 -54.5762 75.166v145.138h-90.9244v-293.118h87.2984v39.984h1.274c12.152 -23.03 41.8362 -47.334 86.1224 -47.334 92.12 0 109.0544 60.662 109.0544 139.454v161.014Z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://x.com/khukoroshi"
+            aria-label="Twitter X"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              id="X-Twitter--Streamline-Font-Awesome"
+            >
+              <desc>X Twitter Streamline Icon: https://streamlinehq.com</desc>
+              <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M400.2478 29.2158h76.9758L309.098 221.3282l197.782 261.456H352.0562L230.7048 324.2533 92.0176 482.7842H14.9328L194.7247 277.261 5.12 29.2158h158.7489l109.576 144.902 126.8029 -144.902Zm-27.0396 407.5574h42.631L140.6454 72.8282h-45.793l278.3558 363.945Z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="line"></div>
     </div>
     <!-- <div id="barToggle">
         <ul>
@@ -67,220 +144,405 @@
             <li><a href="">$</a></li>
         </ul>
     </div> -->
-<!-- bartoggle end -->
+    <!-- bartoggle end -->
 
-<!-- popup start -->
+    <!-- popup start -->
     <div id="pop-con" class="overlay-popup">
-        <section class="contact">
-            <span id="btnClosePopCon" class="btn-close">&times;</span>
-            <h2>Get in touch</h2>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <!-- Replace with your Access Key -->
-                <input type="hidden" name="access_key" value="423fcfa8-7f22-459b-a21d-2963091fc530">
+      <section class="contact">
+        <span id="btnClosePopCon" class="btn-close">&times;</span>
+        <h2>Get in touch</h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Replace with your Access Key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="423fcfa8-7f22-459b-a21d-2963091fc530"
+          />
 
-                <input type="text" name="name" placeholder="Your Name" class="con-input" required>
-                <input type="email" name="email" placeholder="Your Email" class="con-input" required>
-                <textarea rows="6" name="message" placeholder="Your Message" class="con-input" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="con-input"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="con-input"
+            required
+          />
+          <textarea
+            rows="6"
+            name="message"
+            placeholder="Your Message"
+            class="con-input"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </div>
-<!-- popup end -->
+    <!-- popup end -->
 
-<!-- popup future fiture start -->
+    <!-- popup future fiture start -->
     <div id="futurePopUp" class="overlay-popup">
-        <section class="example">
-            <h1>fitur ini belum beres</h1>
-            <img src="img/IMG_3004.GIF" alt="">
-        </section>
+      <section class="example">
+        <h1>fitur ini belum beres</h1>
+        <img src="img/IMG_3004.GIF" alt="" />
+      </section>
     </div>
-<!-- popup future fiture end -->
+    <!-- popup future fiture end -->
 
-<!-- home start -->
+    <!-- home start -->
     <div id="home">
-        <div class="home">
-            <h1>HI, I'M HAIKAL</h1>
-            <p class="animated-text">WEB DEVELOPER [ <span></span> ]</p>
-            <div class="panah">
-                <div class="kanan"></div>
-                <div class="kiri"></div>
-            </div>
+      <div class="home">
+        <h1>HI, I'M HAIKAL</h1>
+        <p class="animated-text">WEB DEVELOPER [ <span></span> ]</p>
+        <div class="panah">
+          <div class="kanan"></div>
+          <div class="kiri"></div>
         </div>
+      </div>
     </div>
-<!-- home end -->
+    <!-- home end -->
 
-<!-- about start -->
+    <!-- about start -->
     <div id="about" class="container">
-        <section class="a-bout">
-            <h2 class="sub-bab-h2">About me</h2>
-            <div class="content">
-                <div class="t-about">
-                    <p>
-                        Hi! Nama saya Haikal Firansyah, seorang web developer pemula dengan minat di bidang frontend dan backend. Saya lulusan SMK Al-Ihsan Batujajar (2025), jurusan Rekayasa Perangkat Lunak.
-                    </p>
-                    <br>
-                    <p>
-                        Saya senang mempelajari teknologi baru dan berfokus pada pembuatan website yang sederhana, elegan, dan fungsional. Dengan kode yang bersih, efisien, dan skalabel, saya ingin menghadirkan pengalaman pengguna yang lancar.
-                    </p>
-                    <br>
-                    <p>
-                        Web development bagi saya adalah batu loncatan menuju cita-cita menjadi programmer handal di bidang keamanan, peretasan etis, dan pengembangan game. Saya percaya setiap proyek adalah kesempatan belajar, dan saya selalu terbuka untuk berkolaborasi serta berbagi pengetahuan.
-                    </p>
-                </div>
-                <div class="i-about">
-                    <div class="front"></div>
-                    <img id="gbr-about" src="img/gprof1.png" alt="haikal picture" width="100%">
-                    <div class="back"></div>
-                </div>
-            </div>
-        </section>
-    </div>
-<!-- about end -->
-
-<!-- experient start -->
-    <div id="experient" class="container">
-        <section class="exper">
-            <h2 class="sub-bab-h2">Experience</h2>
-            <div class="content-exp">  
-                <nav class="sidebar">
-                    <ul>
-                        <li class="active" data-tab="c-jnt">J&T Cargo</li>
-                        <li data-tab="c-tes">tes</li>
-                        <li data-tab="c-tech">technology</li>
-                    </ul>
-                </nav>
-                <div class="con-nav">
-                    <div id="c-jnt" class="tab active">
-                        <h2>Web developer J&T Cargo NGP014B</h2>
-                        <span>january - april 2024</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto voluptatibus in doloribus facere odio nihil eaque eos adipisci ipsum commodi id quaerat quam exercitationem sequi nesciunt quasi minus laudantium!</p>
-                    </div>
-                    <div id="c-tes" class="tab">
-                        <h2>tes</h2>
-                        <span>january - april 2024</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus, distinctio similique eum, quibusdam dolore obcaecati, natus beatae quaerat ipsa placeat ex quos. Possimus minus saepe sit pariatur corrupti dolorum sed inventore tenetur sint laboriosam nobis molestiae ad doloribus aspernatur obcaecati, beatae necessitatibus aperiam ducimus, provident sapiente a itaque harum dolores! Beatae, cupiditate ut. Eligendi, deserunt? Ab excepturi dolorem minima, similique aperiam tempore voluptatibus maxime, possimus quaerat nemo aut, odio magni ducimus hic fuga! Ut id praesentium doloribus alias dignissimos repellendus dolores recusandae adipisci, quia, repellat quibusdam sed cumque sapiente totam odit numquam quis ducimus unde quo voluptatibus molestias qui!</p>
-                    </div>
-                    <div id="c-tech" class="tab">
-                        <h2>teknologi yang ku pakai</h2>
-                        <span>2022 - sekarang</span>
-                        <div class="tech-con-img">
-                            <img src="img/logo/html-5-color/html-5-240.png" alt="">
-                            <img src="img/logo/css-logo-color/css-logo-240.png" alt="">
-                            <img src="img/logo/javascript-color/javascript-240.png" alt="">
-                            <img src="img/logo/php.svg" alt="">
-                            <img src="img/logo/python-color (1)/python-240.png" alt="">
-                            <img src="img/logo/java-logo-color/java-logo-240.png" alt="">
-                            <img src="img/logo/mysql-logo-undefined/mysql-logo-500.png" alt="">
-                            <img src="img/logo/git-logo-color/git-logo-240.png" alt="">
-                            <img src="img/logo/github-logo/github-logo-240.png" alt="">
-                            <img src="img/logo/chatgpt-color/chatgpt-240.png" alt="">
-                            <img src="img/logo/linux.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="content-serti">
-            <div class="cour-2" style="gap: 1em;">
-                <div class="img-card"><img src="img/MDL-504.png" alt="Mdl-504"></div>
-                <div class="img-card"><img src="img/MDL -566.png" alt="MDL-566"></div>
-                <div class="img-card"><img src="img/MDL-567.png" alt="MDL-567"></div>
-                <div class="img-card"><img src="img/Screenshot_2025-09-19_21-27-09.png" alt="hacyiv8"></div>
-            </div>
+      <section class="a-bout">
+        <h2 class="sub-bab-h2">About me</h2>
+        <div class="content">
+          <div class="t-about">
+            <p>
+              Hi! Nama saya Haikal Firansyah, seorang web developer dengan minat
+              di bidang frontend dan backend. Saya lulusan SMK Al-Ihsan
+              Batujajar (2025), jurusan Rekayasa Perangkat Lunak.
+            </p>
+            <br />
+            <p>
+              Saya senang mempelajari teknologi baru dan berfokus pada pembuatan
+              website yang sederhana, elegan, dan fungsional. Dengan kode yang
+              bersih, efisien, dan skalabel, saya ingin menghadirkan pengalaman
+              pengguna yang lancar.
+            </p>
+            <br />
+            <p>
+              Web development bagi saya adalah batu loncatan menuju cita-cita
+              menjadi programmer handal di bidang keamanan, peretasan etis, dan
+              pengembangan game. Saya percaya setiap proyek adalah kesempatan
+              belajar, dan saya selalu terbuka untuk berkolaborasi serta berbagi
+              pengetahuan.
+            </p>
+          </div>
+          <div class="i-about">
+            <div class="front"></div>
+            <img
+              id="gbr-about"
+              src="img/gprof1.png"
+              alt="haikal picture"
+              width="100%"
+            />
+            <div class="back"></div>
+          </div>
         </div>
+      </section>
     </div>
-<!-- experient end -->
+    <!-- about end -->
 
-<!-- work start -->
-    <div id="work" class="container">
-        <section class="work">
-            <h2 class="sub-bab-h2">Some Things I’ve Built</h2>
-            <div class="k-cont">
-                <div class="content">
-                    <div class="project-description">
-                        <h2>Web profile company</h2>
-                        <span>
-                            Ini adalah project website pertama ku di perusahaan J&T Cargo NGP014B, yaitu sebuah web profile company yang minimalis dan sudah responsive
-                        </span>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>tailwind CSS</li>
-                        </ul>
-                    </div>
-                    <div class="project-image">
-                        <div class="front"></div>
-                        <img src="img/Annotation 2025-09-21 215025.png" alt="">
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="project-description">
-                        <h2>Web To-Do List</h2>
-                        <span>
-                            Ini adalah sebuah website yang ku buat ketika ujian kompetensi di sekolah, sebuah To-Do List sederhana dengan sistem Login dan Register, dan waktu deadline.
-                        </span>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <!-- <li>VS Code</li> -->
-                        </ul>
-                    </div>
-                    <div class="project-image">
-                        <div class="front"></div>
-                        <img src="img/Screenshot_21-9-2025_21443_localhost.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="project-description">
-                        <h2>Web Galery</h2>
-                        <span>
-                            ini adalah sebuah website tugas sekolah membuat web galery sederhana dengan fitur CRUD, Login & Register  
-                        </span>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-                    <div class="project-image">
-                        <div class="front"></div>
-                        <img src="img/Screenshot_23-9-2025_073_localhost.jpeg" alt="">
-                    </div>
-                </div>
+    <!-- experient start -->
+    <div id="experient" class="container">
+      <section class="exper">
+        <h2 class="sub-bab-h2">Experience</h2>
+        <div class="content-exp">
+          <nav class="sidebar">
+            <ul>
+              <li class="active" data-tab="c-jnt">J&T Cargo</li>
+              <li data-tab="c-tes">tes</li>
+              <li data-tab="c-tech">technology</li>
+            </ul>
+          </nav>
+          <div class="con-nav">
+            <div id="c-jnt" class="tab active">
+              <h2>Web developer J&T Cargo NGP014B</h2>
+              <span>january - april 2024</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                architecto voluptatibus in doloribus facere odio nihil eaque eos
+                adipisci ipsum commodi id quaerat quam exercitationem sequi
+                nesciunt quasi minus laudantium!
+              </p>
             </div>
-        </section>
+            <div id="c-tes" class="tab">
+              <h2>tes</h2>
+              <span>january - april 2024</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                doloribus, distinctio similique eum, quibusdam dolore obcaecati,
+                natus beatae quaerat ipsa placeat ex quos. Possimus minus saepe
+                sit pariatur corrupti dolorum sed inventore tenetur sint
+                laboriosam nobis molestiae ad doloribus aspernatur obcaecati,
+                beatae necessitatibus aperiam ducimus, provident sapiente a
+                itaque harum dolores! Beatae, cupiditate ut. Eligendi, deserunt?
+                Ab excepturi dolorem minima, similique aperiam tempore
+                voluptatibus maxime, possimus quaerat nemo aut, odio magni
+                ducimus hic fuga! Ut id praesentium doloribus alias dignissimos
+                repellendus dolores recusandae adipisci, quia, repellat
+                quibusdam sed cumque sapiente totam odit numquam quis ducimus
+                unde quo voluptatibus molestias qui!
+              </p>
+            </div>
+            <div id="c-tech" class="tab">
+              <h2>teknologi yang ku pakai</h2>
+              <span>2022 - sekarang</span>
+              <div class="tech-con-img">
+                <img src="img/logo/html-5-color/html-5-240.png" alt="" />
+                <img src="img/logo/css-logo-color/css-logo-240.png" alt="" />
+                <img
+                  src="img/logo/javascript-color/javascript-240.png"
+                  alt=""
+                />
+                <img src="img/logo/php.svg" alt="" />
+                <img src="img/logo/python-color (1)/python-240.png" alt="" />
+                <img src="img/logo/java-logo-color/java-logo-240.png" alt="" />
+                <img
+                  src="img/logo/mysql-logo-undefined/mysql-logo-500.png"
+                  alt=""
+                />
+                <img src="img/logo/git-logo-color/git-logo-240.png" alt="" />
+                <img src="img/logo/github-logo/github-logo-240.png" alt="" />
+                <img src="img/logo/chatgpt-color/chatgpt-240.png" alt="" />
+                <img src="img/logo/linux.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="content-serti">
+        <div class="cour-2" style="gap: 1em">
+          <div class="img-card">
+            <img src="img/MDL-504.png" alt="Mdl-504" />
+          </div>
+          <div class="img-card">
+            <img src="img/MDL -566.png" alt="MDL-566" />
+          </div>
+          <div class="img-card">
+            <img src="img/MDL-567.png" alt="MDL-567" />
+          </div>
+          <div class="img-card">
+            <img src="img/Screenshot_2025-09-19_21-27-09.png" alt="hacyiv8" />
+          </div>
+        </div>
+      </div>
     </div>
-<!-- work end -->
+    <!-- experient end -->
 
-<!-- download resume start -->
+    <!-- work start -->
+    <div id="work" class="container">
+      <section class="work">
+        <h2 class="sub-bab-h2">Some Things I’ve Built</h2>
+        <div class="k-cont">
+          <div class="content">
+            <div class="project-description">
+              <h2>Web profile company</h2>
+              <span>
+                Ini adalah project website pertama ku di perusahaan J&T Cargo
+                NGP014B, yaitu sebuah web profile company yang minimalis dan
+                sudah responsive
+              </span>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <div class="front"></div>
+              <img src="img/Annotation 2025-09-21 215025.png" alt="" />
+            </div>
+          </div>
+          <div class="content">
+            <div class="project-description">
+              <h2>Web To-Do List</h2>
+              <span>
+                Ini adalah sebuah website yang ku buat ketika ujian kompetensi
+                di sekolah, sebuah To-Do List sederhana dengan sistem Login dan
+                Register, dan waktu deadline.
+              </span>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <!-- <li>VS Code</li> -->
+              </ul>
+            </div>
+            <div class="project-image">
+              <div class="front"></div>
+              <img src="img/Screenshot_21-9-2025_21443_localhost.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="content">
+            <div class="project-description">
+              <h2>Web Galery</h2>
+              <span>
+                ini adalah sebuah website tugas sekolah membuat web galery
+                sederhana dengan fitur CRUD, Login & Register
+              </span>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <div class="front"></div>
+              <img src="img/Screenshot_23-9-2025_073_localhost.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- work end -->
+
+    <!-- download resume start -->
     <div id="resume" class="resume">
-        <h2>Check out my résumé!</h2>
-        <a href="" class="button-resume">Grab A Copy</a>
+      <h2>Check out my résumé!</h2>
+      <a href="" class="button-resume">Grab A Copy</a>
     </div>
-<!-- download resume end -->
+    <!-- download resume end -->
 
-<!-- halaman tambahan start -->
+    <!-- halaman tambahan start -->
     <div id="personal" class="container">
-        <section>
-            <h2></h2>
-        </section>
+      <section class="personal">
+        <div class="hobi">
+          <h1>Hobbies</h1>
+          <p>
+            ketika aku tidak sedang coding, biasanya aku membaca novel, menonton
+            film atau mendengarkan musik.
+          </p>
+          <ul>
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.75 12.508L21.25 9.108V14.7609C20.7449 14.4375 20.1443 14.25 19.5 14.25C17.7051 14.25 16.25 15.7051 16.25 17.5C16.25 19.2949 17.7051 20.75 19.5 20.75C21.2949 20.75 22.75 19.2949 22.75 17.5C22.75 17.5 22.75 17.5 22.75 17.5L22.75 7.94625C22.75 6.80342 22.75 5.84496 22.6696 5.08131C22.6582 4.97339 22.6448 4.86609 22.63 4.76597C22.5525 4.24426 22.4156 3.75757 22.1514 3.35115C22.0193 3.14794 21.8553 2.96481 21.6511 2.80739C21.6128 2.77788 21.573 2.74927 21.5319 2.7216L21.5236 2.71608C20.8164 2.2454 20.0213 2.27906 19.2023 2.48777C18.4102 2.68961 17.4282 3.10065 16.224 3.60469L14.13 4.48115C13.5655 4.71737 13.0873 4.91751 12.712 5.1248C12.3126 5.34535 11.9686 5.60548 11.7106 5.99311C11.4527 6.38075 11.3455 6.7985 11.2963 7.25204C11.25 7.67831 11.25 8.19671 11.25 8.80858V16.7609C10.7448 16.4375 10.1443 16.25 9.5 16.25C7.70507 16.25 6.25 17.7051 6.25 19.5C6.25 21.2949 7.70507 22.75 9.5 22.75C11.2949 22.75 12.75 21.2949 12.75 19.5C12.75 19.5 12.75 19.5 12.75 19.5L12.75 12.508Z"
+                />
+                <path
+                  opacity="0.5"
+                  d="M7.75 2C7.75 1.58579 7.41421 1.25 7 1.25C6.58579 1.25 6.25 1.58579 6.25 2V7.76091C5.74485 7.4375 5.14432 7.25 4.5 7.25C2.70507 7.25 1.25 8.70507 1.25 10.5C1.25 12.2949 2.70507 13.75 4.5 13.75C6.29493 13.75 7.75 12.2949 7.75 10.5V5.0045C8.44852 5.50913 9.27955 5.75 10 5.75C10.4142 5.75 10.75 5.41421 10.75 5C10.75 4.58579 10.4142 4.25 10 4.25C9.54565 4.25 8.9663 4.07389 8.51159 3.69837C8.0784 3.34061 7.75 2.79785 7.75 2Z"
+                />
+              </svg>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <path
+                  opacity="0.5"
+                  d="M12 20.0283V18H8L8 20.0283C8 20.3054 8 20.444 8.09485 20.5C8.18971 20.556 8.31943 20.494 8.57888 20.3701L9.82112 19.7766C9.9089 19.7347 9.95279 19.7138 10 19.7138C10.0472 19.7138 10.0911 19.7347 10.1789 19.7767L11.4211 20.3701C11.6806 20.494 11.8103 20.556 11.9051 20.5C12 20.444 12 20.3054 12 20.0283Z"
+                />
+                <path
+                  d="M8 18H7.42598C6.34236 18 5.96352 18.0057 5.67321 18.0681C5.15982 18.1785 4.71351 18.4151 4.38811 18.7347C4.27837 18.8425 4.22351 18.8964 4.09696 19.2397C3.97041 19.5831 3.99045 19.7288 4.03053 20.02C4.03761 20.0714 4.04522 20.1216 4.05343 20.1706C4.16271 20.8228 4.36259 21.1682 4.66916 21.4142C4.97573 21.6602 5.40616 21.8206 6.21896 21.9083C7.05566 21.9986 8.1646 22 9.75461 22H14.1854C15.7754 22 16.8844 21.9986 17.7211 21.9083C18.5339 21.8206 18.9643 21.6602 19.2709 21.4142C19.5774 21.1682 19.7773 20.8228 19.8866 20.1706C19.9784 19.6228 19.9965 18.9296 20 18H12V20.0283C12 20.3054 12 20.444 11.9051 20.5C11.8103 20.556 11.6806 20.494 11.4211 20.3701L10.1789 19.7767C10.0911 19.7347 10.0472 19.7138 10 19.7138C9.95279 19.7138 9.9089 19.7347 9.82112 19.7766L8.57888 20.3701C8.31943 20.494 8.18971 20.556 8.09485 20.5C8 20.444 8 20.3054 8 20.0283V18Z"
+                />
+                <path
+                  opacity="0.5"
+                  d="M4.72718 2.73332C5.03258 2.42535 5.46135 2.22456 6.27103 2.11478C7.10452 2.00177 8.2092 2 9.7931 2H14.2069C15.7908 2 16.8955 2.00177 17.729 2.11478C18.5387 2.22456 18.9674 2.42535 19.2728 2.73332C19.5782 3.0413 19.7773 3.47368 19.8862 4.2902C19.9982 5.13073 20 6.24474 20 7.84202L20 18H7.42598C6.34236 18 5.96352 18.0057 5.67321 18.0681C5.15982 18.1785 4.71351 18.4151 4.38811 18.7347C4.27837 18.8425 4.22351 18.8964 4.09696 19.2397C4.02435 19.4367 4 19.5687 4 19.7003V7.84202C4 6.24474 4.00176 5.13073 4.11382 4.2902C4.22268 3.47368 4.42179 3.0413 4.72718 2.73332Z"
+                />
+                <path
+                  d="M7.25 7C7.25 6.58579 7.58579 6.25 8 6.25H16C16.4142 6.25 16.75 6.58579 16.75 7C16.75 7.41421 16.4142 7.75 16 7.75H8C7.58579 7.75 7.25 7.41421 7.25 7Z"
+                />
+                <path
+                  d="M8 9.75C7.58579 9.75 7.25 10.0858 7.25 10.5C7.25 10.9142 7.58579 11.25 8 11.25H13C13.4142 11.25 13.75 10.9142 13.75 10.5C13.75 10.0858 13.4142 9.75 13 9.75H8Z"
+                />
+              </svg>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </li>
+            <li>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm6 0v12h8V4H6zM2 5v2h2V5H2zm0 4v2h2V9H2zm0 4v2h2v-2H2zm14-8v2h2V5h-2zm0 4v2h2V9h-2zm0 4v2h2v-2h-2zM8 7l5 3-5 3V7z"
+                />
+              </svg>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </li>
+            <li>
+              <svg
+                version="1.1"
+                id="_x32_"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                fill="currentColor"
+              >
+                <g>
+                  <path
+                    class="st0"
+                    d="M510.441,322.894l-29.76-126.56c-15.073-56.252-66.047-95.363-124.286-95.363H155.604
+		c-58.239,0-109.212,39.11-124.285,95.363l-29.76,126.56c-7.618,36.303,13.34,72.524,48.626,84.001l1.74,0.558
+		c32.658,10.632,68.288-3.07,85.429-32.831l25.894-38.289c6.502-11.288,18.538-18.25,31.55-18.25h122.406
+		c13.012,0,25.048,6.962,31.549,18.25l25.894,38.289c17.142,29.761,52.779,43.463,85.438,32.831l1.732-0.558
+		C497.1,395.418,518.06,359.197,510.441,322.894z M191.046,238.081h-41.689v41.696h-36.295v-41.696H71.373v-36.279h41.689v-41.68
+		h36.295v41.68h41.689V238.081z M374.728,151.436c12.626,0,22.847,10.221,22.847,22.848c0,12.61-10.221,22.831-22.847,22.831
+		c-12.61,0-22.831-10.221-22.831-22.831C351.897,161.656,362.118,151.436,374.728,151.436z M329.049,242.801
+		c-12.61,0-22.839-10.23-22.839-22.856c0-12.602,10.229-22.831,22.839-22.831c12.618,0,22.839,10.229,22.839,22.831
+		C351.889,232.572,341.668,242.801,329.049,242.801z M374.728,288.471c-12.61,0-22.831-10.221-22.831-22.831
+		c0-12.627,10.221-22.848,22.831-22.848c12.626,0,22.847,10.221,22.847,22.848C397.575,278.25,387.354,288.471,374.728,288.471z
+		 M420.406,242.801c-12.61,0-22.832-10.23-22.832-22.856c0-12.602,10.222-22.831,22.832-22.831
+		c12.618,0,22.847,10.229,22.847,22.831C443.253,232.572,433.024,242.801,420.406,242.801z"
+                  />
+                </g>
+              </svg>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="goals">
+          <h1>Goals</h1>
+          <p>
+            tujuan ku adalah menjadi full-stack developer yang mampu membangun
+            aplikasi web yang aman, dan geme developer dengan game play yang
+            menarik.
+          </p>
+        </div>
+      </section>
     </div>
-<!-- halaman tambahan end -->
+    <!-- halaman tambahan end -->
 
-<!-- footer start -->
+    <!-- footer start -->
     <div id="footer">
-        <footer>
-            <p>Created By Haikal Firansyah</p>
-        </footer>
+      <footer>
+        <p>Created By Haikal Firansyah</p>
+      </footer>
     </div>
-<!-- footer end -->
-    
+    <!-- footer end -->
 
-<!-- script js -->
-<script type="module" src="js/script.js"></script>
-</body>
+    <!-- script js -->
+    <script type="module" src="js/script.js"></script>
+  </body>
 </html>
