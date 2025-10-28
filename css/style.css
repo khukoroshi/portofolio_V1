@@ -82,7 +82,7 @@ body {
   padding: 5rem 1rem 5rem;
   background-color: var(--var-bg);
   height: auto;
-  min-height: 90dvh;
+  /* min-height: 90dvh; */
   display: flex;
   margin: 0;
   align-items: center;
@@ -1241,6 +1241,7 @@ header h1 {
   color: var(--green);
 }
 .personal .hobi svg {
+  min-width: 50px;
   width: 50px;
   margin: 10px;
   /* color: var(--text-warna-kecil); */
