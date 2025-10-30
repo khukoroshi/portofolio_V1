@@ -53,11 +53,9 @@ body {
   --white: #e6f1ff;
   --green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.4);
-  --pink: #f57dff;
-  --blue: #57cbff;
   --white-grey: rgb(117, 130, 159);
   /* ini buat var toggle theme */
-  --bg-image: url("../img/coridor_tangga_sekolah\(malam\).png");
+  --bg-image: url("../img/atap_sekolah\(malam\).png");
   --var-bg: var(--navy);
   --text-warna-besar: var(--lightest-slate);
   --text-warna-sedang: rgba(126, 136, 165, 1);
@@ -65,7 +63,7 @@ body {
 }
 
 body.light-theme {
-  --bg-image: url("../img/coridor_tangga_sekolah\(pagi\).png");
+  --bg-image: url("../img/atap_sekolah\(pagi\).png");
   --var-bg: var(--white-grey);
 }
 
@@ -901,7 +899,18 @@ header h1 {
   /* background-color: red; */
   /* height: 500px; */
 }
-
+.tab a,
+.work .k-cont .project-description span a {
+  color: var(--green);
+  text-decoration: none;
+  font-style: italic;
+  transition: all 0.3s;
+  position: relative;
+}
+.tab a:hover,
+.work .k-cont .project-description span a:hover {
+  text-decoration: underline;
+}
 .tab h2 {
   color: var(--text-warna-besar);
   text-transform: capitalize;
@@ -910,13 +919,29 @@ header h1 {
   font-family: "Asimovian", serif;
 }
 .tab p,
-.tab .tech-con-img {
+.tab .tech-con-img,
+.tab ul {
   margin-top: 1rem;
 }
 .tab p,
-.tab span {
+.tab span,
+.tab ul {
   font-size: 0.85rem;
   color: var(--text-warna-sedang);
+}
+.tab ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 10px;
+  gap: 1em;
+}
+.tab ul li {
+  padding-left: 10px;
+}
+.tab ul li::marker {
+  content: ">";
+  color: var(--green);
 }
 .tab .tech-con-img {
   display: flex;
@@ -1259,10 +1284,25 @@ header h1 {
 footer {
   background-color: var(--navy);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
   color: var(--dark-slate);
+}
+footer ul {
+  list-style: none;
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+footer svg {
+  width: 25px;
+  color: var(--dark-slate);
+  transition: all 0.3s;
+}
+footer svg:hover {
+  color: var(--green);
 }
 
 /* footer end */
@@ -1481,5 +1521,10 @@ img {
   .personal {
     min-width: none;
     width: 100%;
+  }
+
+  /* untuk footer */
+  footer ul {
+    display: flex;
   }
 }
