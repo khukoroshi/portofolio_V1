@@ -1,0 +1,1 @@
+ini adalah project portofolio menggunakan html, css, dan javascript. aku membuatnya dengan konsep ATM. Ada beberapa tampilan yang aku tiru di beberapa website salah satunya adalah website personalnya britany chiang, saya meniru banyak hal dari segi tampilan. 
