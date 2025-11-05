@@ -1241,7 +1241,8 @@ header h1 {
   line-height: 2em;
   color: var(--text-warna-besar);
 }
-.personal p {
+.personal p,
+.personal .hobi ul li {
   font-family: "Kode_Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
@@ -1260,7 +1261,6 @@ header h1 {
   align-items: center;
   gap: 10px;
   transition: all 0.3s;
-  color: var(--text-warna-sedang);
 }
 .personal .hobi ul li:hover {
   color: var(--green);
@@ -1394,11 +1394,14 @@ img {
   /* untuk personal */
   .personal {
     flex-wrap: wrap;
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 
 @media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
   .sub-bab-h2 {
     /* margin-left: 3rem; */
     width: 90%;
@@ -1521,6 +1524,11 @@ img {
   .personal {
     min-width: none;
     width: 100%;
+  }
+  .personal .hobi svg {
+    min-width: 30px;
+    width: 30px;
+    margin: 7px;
   }
 
   /* untuk footer */
