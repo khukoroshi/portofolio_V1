@@ -55,7 +55,7 @@ body {
   --green-tint: rgba(100, 255, 218, 0.4);
   --white-grey: rgb(117, 130, 159);
   /* ini buat var toggle theme */
-  --bg-image: url("../img/atap_sekolah\(malam\).png");
+  --bg-image: url("../img/atap_sekolah\(malam\).webp");
   --var-bg: var(--navy);
   --text-warna-besar: var(--lightest-slate);
   --text-warna-sedang: rgba(126, 136, 165, 1);
@@ -63,7 +63,7 @@ body {
 }
 
 body.light-theme {
-  --bg-image: url("../img/atap_sekolah\(pagi\).png");
+  --bg-image: url("../img/atap_sekolah\(pagi\).webp");
   --var-bg: var(--white-grey);
 }
 
@@ -619,118 +619,6 @@ header h1 {
   font-size: clamp(0.5rem, calc(7vw + 0.2rem), 1rem);
   font-family: "Asimovian", serif;
   color: var(--text-warna-sedang);
-}
-
-.home .animated-text span {
-  position: relative;
-}
-
-.home .animated-text span::before {
-  content: "FrontEnd";
-  animation: words2 8s infinite;
-}
-.home .animated-text span::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background-color: var();
-  backdrop-filter: blur(10px);
-  border-left: 2px solid var(--text-warna-sedang);
-  right: -3px;
-  animation: cursor 0.8s infinite;
-}
-
-@keyframes cursor {
-  to {
-    border-left: 2px solid var(--navy-shadow);
-  }
-}
-@keyframes words {
-  0%,
-  50% {
-    content: "FrontEnd";
-  }
-  51%,
-  100% {
-    content: "BackEnd";
-  }
-}
-@keyframes typing {
-  25%,
-  37%,
-  75%,
-  88% {
-    width: 0;
-  }
-  12%,
-  50%,
-  63%,
-  100% {
-    width: calc(100%+8px);
-  }
-}
-@keyframes words2 {
-  0%,
-  3% {
-    content: "F";
-  }
-  4%,
-  6% {
-    content: "Fr";
-  }
-  7%,
-  9% {
-    content: "Fro";
-  }
-  10%,
-  13% {
-    content: "Fron";
-  }
-  14%,
-  17% {
-    content: "Front";
-  }
-  18%,
-  21% {
-    content: "FrontE";
-  }
-  22%,
-  25% {
-    content: "FrontEn";
-  }
-  26%,
-  50% {
-    content: "FrontEnd";
-  }
-  51%,
-  54% {
-    content: "B";
-  }
-  55%,
-  58% {
-    content: "Ba";
-  }
-  59%,
-  62% {
-    content: "Bac";
-  }
-  63%,
-  66% {
-    content: "Back";
-  }
-  67%,
-  70% {
-    content: "BackE";
-  }
-  71%,
-  75% {
-    content: "BackEn";
-  }
-  76%,
-  100% {
-    content: "BackEnd";
-  }
 }
 
 .panah {
@@ -1395,6 +1283,22 @@ img {
   .personal {
     flex-wrap: wrap;
     padding: 0 2rem;
+  }
+}
+
+@media (max-height: 480px) {
+  /* untuk sticky content */
+  .s-c-r a {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+  .s-c-l a {
+    width: 15px;
+    height: 15px;
+  }
+  .s-c-r .line,
+  .s-c-l .line {
+    height: 60px;
   }
 }
 
